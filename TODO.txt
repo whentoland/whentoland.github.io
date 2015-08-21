@@ -1,0 +1,5 @@
+- fix selector layout
+- do info and assumptions
+
+assumptions
+- if over 25C then assume load of 25C

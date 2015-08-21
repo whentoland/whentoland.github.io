@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>At what voltage should I land?</title>
+<meta name="description" content="Whentoland helps you know when its time to land your FPV plane or quad">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<SCRIPT async LANGUAGE="JavaScript" SRC="myscript.js"> </SCRIPT>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66577106-2', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+  var counter=0;
+</script>
+<link rel="shortcut icon" href="images/smallicon.ico">
+</head>
+<body>
+<span class="bg" style="background-image: url(images/background.jpg);"></span>
+<div style="text-align:center" class="placeheader">
+	<div id="qmark" onclick="infoClick()"></div>
+	<div id="qmarkmob" onclick="infoClickMob()"></div>
+</div>
+
+<div style="clear: right" class="centreselectors">
+	<div class="choosesetup">
+		<h1>When is it time to land my FPV plane or quad?</h1>
+	</div>
+<br>
+	
+		<form name="myForm" id="myForm">
+			<select id="cellsChoice" class="selectors" onchange="inputSelect('cellsChoice')" autofocus>
+			  <option disabled selected value="unselected">Cell Count</option>
+			  <option value=1>1S</option>
+			  <option value=2>2S</option>
+			  <option value=3>3S</option>
+			  <option value=4>4S</option>
+			  <option value=5>5S</option>
+			  <option value=6>6S</option>
+			</select>
+			<input title="Battery Amps" type="number" name="battAmps" placeholder="Batt. Amps" onchange="inputSelect()"> <span class="gaps">&nbsp&nbsp</span>
+			<br>
+			<input title="Watts drain" type="number" name="wattsDrain" placeholder="Average Watts Drain" onchange="inputSelect('wattsDrain')"> <span class="gaps">&nbsp&nbsp</span>
+				OR
+			<input title="Motor power" type="number" name="motorPower" placeholder="Motor Watts rating" onchange="inputSelect('motorPower')"> <span class="gaps">&nbsp&nbsp</span>
+			AND
+			<select id="throttle" class="selectors" onchange="inputSelect('throttle')" autofocus>
+				  <option disabled selected value="unselected">Average Throttle</option>
+				  <option value=10>10%</option>
+				  <option value=20>20%</option>
+				  <option value=30>30%</option>
+				  <option value=40>40%</option>
+				  <option value=50>50%</option>
+				  <option value=60>60%</option>
+				  <option value=60>70%</option>
+				  <option value=60>80%</option>
+				  <option value=60>90%</option>
+				  <option value=60>100%</option>
+			</select>
+		</form>		
+
+
+		<div id="buttonHolder" class="positionbutton"> 		
+<div id="theButton" class="disabledButton" onclick="buttonClick()"></div>
+
+</div>
+<br>
+<div id="answervolts" class="hidden"><!----class="answerkm">--->
+The definitive FPV range calculator
+</div>
+<div id="answertime" class="hidden"><!------class="answerfunny">---->
+The definitive FPV range calculator
+</div>
+<div id="andnow" class="hidden"> <!---class="andnow">--->
+...and now, to read up on how to reach your max flight time safely...
+</div>
+<div id="sources" class="hidden"><!---class="sources">--->
+<a href="http://www.guidetoFPV.com" target="_blank"><img onclick="guideClick()" class="images" src="images/guide.jpg" alt="The beginner's guide to FPV" width="300" height="400"></a>
+<a href="http://www.fpvlab.com" target="_blank"><img onclick="labClick()" class="images" id="labimage" src="images/lab.jpg" alt="Link to FPVLab" width="300" height="400"></a>
+</div>
+<div id="adverts" class="hidden"><!---class="sources">--->
+<a href="http://www.guidetoFPV.com" target="_blank"><img onclick="guideClick()" class="images" src="images/guide.jpg" alt="The beginner's guide to FPV" width="300" height="400"></a>
+<a href="http://phantomangel.rocks" target="_blank"><img onclick="angelClick()" class="images" id="labimage" src="images/angel.png" alt="Link to Phantom Angel" width="300" height="400"></a>
+</div>
+		</div>
+		
+<div class="hidden">
+	<script type="text/javascript">
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"images/button-selected.png",
+				"images/guide.jpg",
+				"images/angel.png",
+				"images/qmark-selected.png",
+				"images/tweet.png",
+				"images/lab.jpg"
+			)
+	</script>
+</div>
+<link rel="stylesheet" type="text/css" href="./style/style.css"/>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 954658577;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="Google stuff" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/954658577/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+		</body>
+</html>

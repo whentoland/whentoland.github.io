@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maximise your FPV range - assumptions</title>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50899938-1', 'maxmyrange.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+<link rel="shortcut icon" href="images/smallicon.ico">
+</head>
+<body>
+
+<span class="bg" style="background-image: url(images/background.jpg);"></span>
+<div style="text-align:center" class="placeheader">
+	<div id="back"><a href="http://maxmyrange.com">BACK</a></div>
+</div>
+
+
+
+<div class="textcontainer">
+	<h1>
+		Main assumptions used
+	</h1>
+	<h2>
+		<ul>
+			<li>Perfect noise floor (i.e. noise floor below receiver's sensitivity</li>
+			<li>Perfect line of sight between the Tx and Rx (i.e. zero obstructions in the frenzel zone)</li>
+			<li>For linear polarised antennas, both antennas are perfectly oriented to avoid all polarisation mismatch</li>
+			<li>When using a linear and a circular polarised antenna, the loss is 3db</li>
+			<li>All transmitters emit exactly their stated power</li>
+			<li>Receiver assumed to have -85db sensitivity</li>
+			<li>Range calculations use the standard link margin calculations</li>
+			<li>The estimated range is the range at which the link begins to deteriorate. Pilots often accept some static and fly beyond that</li>
+		</ul>
+		<br>
+		Additionally, gain values for different antennas were taken from manufacturer published information, as shown below. Note:
+		<ul>
+		<li>I don't endorse any particular antenna manufacturer so I've taken the photos at random from a selection of vendors</li>
+		<li>The "common frequencies" column shows which frequencies each antenna can commonly be found in in FPV stores. In theory you could build most antenna designs at most frequencies </li>
+		<li>Where 1.3 is stated its most likely that 1.2 can also be found. Same with 2.4 and 2.3</li>
+		</ul>	
+		<br><br>
+		<table width="80%">
+			<tr>
+			  <td width="25%" align="center"><u>Example photo</u></td>	
+			  <td width="25%"><u>Common name</u></td>
+			  <td width="20%"><u>Gain</u></td> 
+			  <td width="10%"><u>Polarisation</u></td>
+			  <td width="20%"><u>Common frequencies</u></td>
+			</tr>
+		</table>
+		<br><br>
+		<table width="80%">
+		<tr>
+			  <td  width="25%"><img class="antennaimage" src="./antennas/rubberduck.jpg" alt="Rubber duck antenna"</td>	
+			  <td width="25%">Rubber ducky</td>
+			  <td width="20%">1db & 2db</td> 
+			  <td width="10%">linear</td>
+			  <td width="20%">All video frequencies</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/clover.jpg" alt="Cloverleaf antenna"</td>	
+			  <td>Cloverleaf</td>
+			  <td>1.25db</td> 
+			  <td>circular</td>
+			  <td>All video frequencies</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/skewplanar.jpg" alt="Skew planar antenna"></td>	
+			  <td>Skew planar</td>
+			  <td>0.92db</td> 
+			  <td>circular</td>
+			  <td>All video frequencies</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/fan.jpg" alt="Fan antenna"</td>	
+			  <td>Fan</td>
+			  <td>0.9db</td> 
+			  <td>circular</td>
+			  <td>1.3, 2.4 and 5.8</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/skyhammer.jpg" alt="Sky hammer antenna"</td>	
+			  <td>Sky hammer</td>
+			  <td>4.25db</td> 
+			  <td>circular</td>
+			  <td>1.3 and 5.8
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/madmushroom.jpg" alt="Mad mushroom antenna"</td>	
+			  <td>Mad mushroom</td>
+			  <td>1.5db</td> 
+			  <td>circular</td>
+			  <td>All video frequencies</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/windmill.jpg" alt="Windmill antenna"</td>	
+			  <td>Windmill</td>
+			  <td>1.3db</td> 
+			  <td>circular</td>
+			  <td>2.4 and 5.8</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/moxon.jpg" alt="Moxon antenna"</td>	
+			  <td>Moxon</td>
+			  <td>5.75</td> 
+			  <td>linear</td>
+			  <td>433</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/yagi.jpg" alt="Yagi antenna"</td>	
+			  <td>Yagis</td>
+			  <td>6-16.6dB</td> 
+			  <td>linear</td>
+			  <td>All video frequencies</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/crosshair.jpg" alt="Crosshair antenna"</td>	
+			  <td>Crosshair</td>
+			  <td>10db</td> 
+			  <td>circular</td>
+			  <td>All video frequencies</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/patchlp.jpg" alt="Patch antenna"</td>	
+			  <td>Patch</td>
+			  <td>8db, 11db and 14db</td> 
+			  <td>linear</td>
+			  <td>All video frequencies</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/patchcp.jpg" alt="Patch antenna"</td>	
+			  <td>Patch</td>
+			  <td>8db</td> 
+			  <td>circular</td>
+			  <td>1.3, 2.4 and 5.8</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/pepperbox.jpg" alt="Pepperbox antenna"</td>	
+			  <td>Pepperbox</td>
+			  <td>13db</td> 
+			  <td>circular</td>
+			  <td>1.3, 2.4 and 5.8</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/helical.jpg" alt="Helical antenna"</td>	
+			  <td>Helical 3, 5, 7, 10 and 16 turns</td>
+			  <td>7db, 9.5db, 11.25db, 12.5db and 15.5db</td> 
+			  <td>circular</td>
+			  <td>All video frequencies</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/invertedv.jpg" alt="Inverted V antenna"</td>	
+			  <td>Inverted V</td>
+			  <td>1.75db</td> 
+			  <td>linear</td>
+			  <td>900 and 1.3</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/halfwavedipole.jpg" alt="1/2 wave dipole antenna"</td>	
+			  <td>1/2wave dipole</td>
+			  <td>2.15</td> 
+			  <td>linear</td>
+			  <td>433</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/turnstyle.jpg" alt="Turnstyle antenna"</td>	
+			  <td>Turnstile</td>
+			  <td>2.2db</td> 
+			  <td>linear</td>
+			  <td>433</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/gatling.jpg" alt="Gatling antenna"</td>	
+			  <td>Gatling</td>
+			  <td>16db</td> 
+			  <td>circular</td>
+			  <td>1.3</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/vulcan.jpg" alt="Vulcan antenna"</td>	
+			  <td>Vulcan</td>
+			  <td>18db</td> 
+			  <td>circular</td>
+			  <td>5.8</td>
+			</tr>
+			<tr>
+			<td><img class="antennaimage" src="./antennas/biquad.jpg" alt="Biquad antenna"</td>	
+			  <td>BiQuad</td>
+			  <td>10db</td> 
+			  <td>circular</td>
+			  <td>1.3
+			</tr>	
+			<tr>
+			<td><img class="antennaimage" src="./antennas/diamond.png" alt="Diamond SRH771 antenna"</td>	
+			  <td>Diamond SRH771</td>
+			  <td>2.15db</td> 
+			  <td>linear</td>
+			  <td>433</td>
+			</tr>			
+			<tr>
+			<td><img class="antennaimage" src="./antennas/spironet.jpg" alt="Spironet antenna"</td>	
+			  <td>Spironet CP Patch</td>
+			  <td>13db</td> 
+			  <td>circular</td>
+			  <td>2.4 and 5.8</rd>
+			</tr>				
+			<tr>
+			<td><img class="antennaimage" src="./antennas/myflydream23db.png" alt="Myflydream 23dbi patch antenna"</td>	
+			  <td>MyFlyDream 23dBi patch</td>
+			  <td>23db</td> 
+			  <td>circular</td>
+			  <td>5.8</td>
+			</tr>
+			<td><img class="antennaimage" src="./antennas/sniper.jpg" alt="Sniper antenna"</td>	
+			  <td>Sniper</td>
+			  <td>13.5db</td> 
+			  <td>circular</td>
+			  <td>5.8</td>
+			</tr>			
+		</table>
+	</h2>
+</div>
+<link rel="stylesheet" type="text/css" href="./style/assstyle.css"/>
+</body>
+</html>
