@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Maximise your FPV range</title>
-<meta name="description" content="Find out answers to questions like 'what is my FPV range', 'how far can I fly', 'what range does this antenna give me', 'what if I changed my setup in this way'">
+<title>When to land my FPV craft?</title>
+<meta name="description" content="Whentoland helps you know when its time to land your FPV plane or quad">
 <meta name="keywords" content="FPV, range calculator, CP antenna, VTx, VRx">
 <meta name="author" content="Alex Protogerellis">
 <meta name=viewport content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-50899938-1', 'maxmyrange.com');
+  ga('create', 'UA-66577106-2', 'auto');
   ga('require', 'displayfeatures');
   ga('send', 'pageview');
 </script>
@@ -24,19 +24,24 @@
 <span class="bg" style="background-image: url(images/background.jpg);"></span>
 <div class="textcontainer">
 	<h1>
-		Maximise your FPV range
+		WhenToLand - Land time voltage calculator
 	</h1>
 	<h2>
-		MaxMyRange calculates your total theoretical range based on your setup's frequency, power and antennas.
+		WhenToLand calculates the theoretical voltage, amps and time at which you need to start landing
 	</h2>
 	<h3>
 		<br>
-		The result is the theoretical best case range of your system. Real life range will depend on a number of additional factors. As such, please only use these calculations as indicative and always fly well within your theoretical range. And don't forget, range is not the only factor when building an FPV setup - excessive power can cause interference, low frequency results in larger antennas and each antenna's radiation pattern is different.
+		The results shown are based on average performance of a variety of typical RC batteries. However note that each battery and each setup behaves differently so use these estimates as guidance and then fine tune them on your setup.
 		<br><br>
-		Please feel free to send any and all feedback on how to improve the site and requests for changes or additions to the <a href="assumptions.html">assumptions used</a>
+		A couple of key assumptions:
+		<ul>
+			<li>If you enter a drain of over 25C, for calculation purposes it is assumed that the drain is 25C</li>
+			<li>The voltage drop of LiPos under load at different C levels as well as the percentage capacity in relation to voltage has been calculated as an average from a dozen online sources</li>
+			<li>It is assumed that its time to land at when the LiPo has 25% of its Amps left</li>
+		</ul><br><br>
+		Please feel free to send any and all feedback on how to improve the site and requests for changes or additions to the >assumptions used.
 		<br><br><br>
 		Site created by <a href="http://fpvlab.com/forums/member.php?5540-ProtoCrash">Alex Protogerellis (protocrash)</a>
-		<br>Design inspired (heavily) from Alex Cican's tiii.me
 	</h3>
 	<br><br>
 </div>
