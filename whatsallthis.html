@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>When to land my FPV craft?</title>
+<meta name="description" content="Whentoland helps you know when its time to land your FPV plane or quad">
+<meta name="keywords" content="FPV, range calculator, CP antenna, VTx, VRx">
+<meta name="author" content="Alex Protogerellis">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66577106-2', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+<link rel="shortcut icon" href="images/smallicon.ico">
+</head>
+<body>
+<span class="bg" style="background-image: url(images/background.jpg);"></span>
+<div class="textcontainer">
+	<h1>
+		WhenToLand - Land time voltage calculator
+	</h1>
+	<h2>
+		WhenToLand calculates the theoretical voltage, amps and time at which you need to start landing
+	</h2>
+	<h4>
+		<br>
+		Hi there,
+		<br><br>
+		If you're new to FPV or RC a lot of this may be confusing (it was to me!). Here are a few tips to help make sense of it all:
+		<ul>
+			<li>WhenToLand calculates the point in time when you're almost out of battery, or, to be more exact, the point where you'll start causing your battery damage. LiPo batteries can be discharged below 25% (the point at which WhenToLand instructs you to land but you'll be causing your batteries damage and ultimately, if you discharge them completely they will most likely stop working for good.</li>
+			<li>So, when using WhenToLand, take into account distance to your landing area. If WhenToLand says you need to land at 10v then make sure you're close to the landing field before you reach 10v</li>
+			<li>When it comes to LiPos, a lot is approximate. Different batteries behave in different ways depending on their quality, air temperature, age, how well they've been treated etc. So, take WhenToLand as a guidelines and then check your own LiPos after each flight.</li>
+			<li>When LiPos are under load (i.e. you're flying with them) they will produce a lower voltage rating than if they're just sitting on the bench. That's why when figuring out when to land you need to take into account the drain on the battery at the time of measurement.</li>
+			<li>You have a few options to figure out your drain. You can see your actual drain on your OSD if it supports it. Failing that you could use a motor/prop calculator such as eCalc which is available for free online. If that doesn't help then WhenToLand offers a last way of approximating this, by entering your motors maximum wattage (as stated in its manual) and an approximation of the amount of throttle you're applying.</li>
+			<li>You'll notice that WhenToLand gives three outputs: the voltage at which to land, the estimated duration of the flight and the amp consumption at which to land. The latter two are indications only because a battery that's not fully charged or one that's not at optimum performance will be drained faster (i.e. in less time and fewer amps) than a fresh fully charged one. That's why voltage is the main indicator here.	</li>
+			
+		</ul><br><br>
+		Hope this helps a bit!
+		<br><br>
+		Alex
+		
+	</h4>
+	<br><br>
+</div>
+<link rel="stylesheet" type="text/css" href="./style/infostyle.css"/>
+</body>
+</html>
