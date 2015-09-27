@@ -20,7 +20,7 @@
 		var voltToLand=voltTable[cRating(theFinalDrain,battWattsCalc(battCells,battAmps))*2];
 				
 		document.getElementById('answervolts').innerHTML = "Its time to land when your OSD shows "+superRound(voltToLand,2)*battCells+"v (under normal load)";
-		document.getElementById('answertime').innerHTML = "This should be after approximately "+superRound(flightTime,0)+" minutes flown and "+superRound(ampsToLand,0)+" Amps used";
+		document.getElementById('answertime').innerHTML = "This should be after approximately "+superRound(flightTime,0)+" minutes flown and "+superRound(ampsToLand,0)+" mA used";
 
 		if ((isNaN(voltToLand))||(isNaN(flightTime))||(isNaN(ampsToLand))) {
 			document.getElementById('answervolts').innerHTML = "Oops, something's wrong";
